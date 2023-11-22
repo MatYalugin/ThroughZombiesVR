@@ -189,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 23000010054905394, guid: 88075a54c7fb1484ba25db394b612917, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 09ca961d5f19189428066c50ba501d98, type: 2}
+      objectReference: {fileID: 2100000, guid: 7d49c2868c816f94699f767320abfd18, type: 2}
     - target: {fileID: 114000013988111622, guid: 88075a54c7fb1484ba25db394b612917, type: 3}
       propertyPath: onButtonUp.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -923,17 +923,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4607221031386922593, guid: 48d099adf95fc1e4c8d6b9b5574eff7e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.06566891
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607221031386922593, guid: 48d099adf95fc1e4c8d6b9b5574eff7e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.7479999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607221031386922593, guid: 48d099adf95fc1e4c8d6b9b5574eff7e, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.9736061
+    - target: {fileID: 1381362827774167038, guid: 48d099adf95fc1e4c8d6b9b5574eff7e, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48d099adf95fc1e4c8d6b9b5574eff7e, type: 3}
@@ -1734,7 +1726,7 @@ PrefabInstance:
     - target: {fileID: 23000010054905394, guid: 88075a54c7fb1484ba25db394b612917, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 09ca961d5f19189428066c50ba501d98, type: 2}
+      objectReference: {fileID: 2100000, guid: 7d49c2868c816f94699f767320abfd18, type: 2}
     - target: {fileID: 114000013988111622, guid: 88075a54c7fb1484ba25db394b612917, type: 3}
       propertyPath: onButtonUp.m_PersistentCalls.m_Calls.Array.size
       value: 0

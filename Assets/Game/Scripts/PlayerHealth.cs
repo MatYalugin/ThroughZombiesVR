@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public float health = 100;
+    public List<GameObject> weapons;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +23,17 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(0);
-            Destroy(gameObject);
+            playerDied();
+        }
+    }
+    public void playerDied()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
+        foreach (GameObject obj in weapons)
+        {
+            Destroy(obj);
         }
     }
 }

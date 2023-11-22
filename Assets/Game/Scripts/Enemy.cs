@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     private bool isAttacking;
     public float damage = 20;
     public float attackDelay = 0.4f;
+    public AudioSource kickSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,7 +81,11 @@ public class Enemy : MonoBehaviour
         while (isAttacking)
         {
             // Наносим урон игроку
-            player.GetComponent<PlayerHealth>().takeDamage(damage);
+            if(isDead != true)
+            {
+                player.GetComponent<PlayerHealth>().takeDamage(damage);
+                kickSound.Play();
+            }
 
             // Проигрываем анимацию атаки
             animator.Play("Attack");

@@ -10,6 +10,7 @@ public class Knife : MonoBehaviour
     public float knifeDamage;
     public GameObject knife;
     public Collider bladeCollider;
+    public AudioSource kickSound;
     // Start is called before the first frame update
     public void Start()
     {
@@ -35,10 +36,12 @@ public class Knife : MonoBehaviour
         if (other.tag.Equals("Target"))
         {
             other.gameObject.SendMessage("ApplyDamage", SendMessageOptions.DontRequireReceiver);
+            kickSound.Play();
         }
         if (other.tag.Equals("Enemy"))
         {
             other.gameObject.GetComponent<Enemy>().takeDamage(knifeDamage);
+            kickSound.Play();
         }
     }
 }
