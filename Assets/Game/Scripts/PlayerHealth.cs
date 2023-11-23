@@ -33,6 +33,14 @@ public class PlayerHealth : MonoBehaviour
             playerDied();
         }
     }
+    public void takeHealth(float Health)
+    {
+        health += Health;
+        if (health > 100)
+        {
+            health = 100;
+        }
+    }
     public void playerDied()
     {
         Time.timeScale = 1f;

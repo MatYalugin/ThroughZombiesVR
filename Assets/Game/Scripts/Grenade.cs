@@ -60,7 +60,7 @@ public class Grenade : MonoBehaviour
         explosionSound.Play();
         explosionEffect.Play();
         damageSphere.SetActive(true);
-        Invoke("removeDamageSphere", 0.01f);
+        Invoke("removeDamageSphere", 0.02f);
         Invoke("destroySelf", 3f);
     }
     public void removeDamageSphere()
