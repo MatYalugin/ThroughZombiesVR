@@ -7,6 +7,7 @@ public class KeepCameraWithBody : MonoBehaviour
     public Transform playerCamera;
     public float yOffset;
     private Vector3 initialRotation;
+    public Collider playerCollider;
     void Start()
     {
         initialRotation = gameObject.transform.rotation.eulerAngles;
