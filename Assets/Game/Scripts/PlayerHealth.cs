@@ -10,10 +10,11 @@ public class PlayerHealth : MonoBehaviour
     public Slider HealthBar;
     public Text HealthText;
     public List<GameObject> weapons;
+    private GameObject nukeLauncher;
     // Start is called before the first frame update
     void Start()
     {
-
+        nukeLauncher = GameObject.Find("FalloutNukeLauncher");
     }
 
     // Update is called once per frame
@@ -50,5 +51,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(obj);
         }
+        Destroy(nukeLauncher);
     }
 }
