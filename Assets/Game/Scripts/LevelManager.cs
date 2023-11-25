@@ -10,6 +10,10 @@ public void changeLevel(int index)
         Time.timeScale = 1f;
         SceneManager.LoadScene(index);
     }
+    public void goToMainMenuWithDelay()
+    {
+        Invoke("changeLevel(0)", 0.5f);
+    }
     public void reloadScene()
     {
         Time.timeScale = 1f;

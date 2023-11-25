@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthToGivePlayer: 40
-  amountOfUses: 5
+  amountOfUses: 3
   usesText: {fileID: 1086063737935907088}
 --- !u!1 &7423403299782533728
 GameObject:

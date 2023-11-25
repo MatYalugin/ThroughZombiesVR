@@ -13,6 +13,7 @@ public class NukeLauncher : MonoBehaviour
     public int launchNumber = 1;
     public Transform launchPoint;
     public AudioSource launchSound;
+    public Animator weaponAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,5 +51,6 @@ public class NukeLauncher : MonoBehaviour
         // Добавляем импульсную силу в заданном направлении
         rb.AddForce(throwDirection * 35, ForceMode.Impulse);
         launchSound.Play();
+        weaponAnimator.Play("Shot");
     }
 }
