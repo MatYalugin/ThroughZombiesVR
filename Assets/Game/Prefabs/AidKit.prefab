@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22f7f568bc32654e93b3ab688255dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthToGivePlayer: 40
+  healthToGivePlayer: 20
   amountOfUses: 3
   usesText: {fileID: 1086063737935907088}
 --- !u!1 &7423403299782533728
